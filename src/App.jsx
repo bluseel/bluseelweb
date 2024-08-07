@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Navmenu from './components/Navmenu';
+import Navbar from './pages/nav/Navbar';
+import Navmenu from './pages/nav/Navmenu';
 
 const App = () => {
   return (
-    <div className="">
+    <div>
       <Navbar />
-      <Outlet />
       <Outlet />
     </div>
   );

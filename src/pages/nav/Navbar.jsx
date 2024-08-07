@@ -22,8 +22,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky left-0 top-0 w-full">
-      <div className="absolute left-0 top-0 flex h-[12svh] w-[98svw] items-center p-4 sm:px-8">
+    <div className="sticky left-0 top-0 z-[100] w-full">
+      <div className="absolute left-0 top-0 flex h-[12svh] w-[100svw] items-center p-4 sm:px-8 lg:w-[98.8svw]">
         {menuOpen && (
           <div className="absolute inset-0 h-[100vh] w-full bg-gray-800 bg-opacity-90"></div>
         )}
@@ -67,13 +67,13 @@ const Navbar = () => {
         } ${showMenu ? 'block' : 'hidden'}`} // Control visibility and transition
         style={{
           backgroundImage: 'url(/foryou.png)',
-          backgroundSize: '300%', // Scale the background image
+          backgroundSize: '350%', // Scale the background image
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
         }}
       >
         <div className="flex justify-start">
-          <div className="h-10">
+          <div className="h-16 sm:h-10">
             <img src={logo} className="h-full w-full" alt="" />
           </div>
         </div>

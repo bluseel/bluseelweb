@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="flex h-[100svh] max-h-[100svh] items-center">
+    <div className="flex h-[100svh] items-center">
       <section className="flex w-full flex-col items-center gap-5 text-wrap text-center">
         <div>
           <h1 className="px-8 text-4xl leading-snug md:text-5xl lg:text-7xl">
