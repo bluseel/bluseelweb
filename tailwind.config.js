@@ -8,7 +8,10 @@ export default {
     extend: {
       fontFamily: {
         anton: ['Anton', 'sans-serif'],
-        roboto: ['Lucida Sans', 'sans-serif'],
+        lucida: ['Lucida Sans', 'sans-serif'],
+      },
+      colors: {
+        primary: '#003459',
       },
     },
   },
