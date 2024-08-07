@@ -5,6 +5,8 @@ import App from './App';
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
+// import Process from './pages/Process';
+import Process from './pages/Process updated';
 import './index.css';
 
 ReactDOM.render(
@@ -14,6 +16,7 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="process" element={<Process />} />
           {/* Add the NotFound route as the last route */}
           <Route path="*" element={<NotFound />} />
         </Route>

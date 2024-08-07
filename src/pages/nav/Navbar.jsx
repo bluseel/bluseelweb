@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from '/logo.svg';
 import menuIcon from '/hamburger.svg';
 import closeIcon from '/cross.svg';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,7 +39,7 @@ const Navbar = () => {
 
           {/* right side */}
           <div className="flex items-center">
-            <div className="font-lucida flex h-[35px] items-center gap-2 text-[0.8rem]">
+            <div className="flex h-[35px] items-center gap-2 font-lucida text-[0.8rem]">
               <div className="flex h-full w-[130px] items-center rounded-lg bg-primary px-4 text-center text-white transition-all hover:cursor-pointer hover:bg-primary/80">
                 Schedule a Call
               </div>
@@ -78,24 +79,55 @@ const Navbar = () => {
           </div>
         </div>
         <nav className="mt-4 space-y-4">
-          <a href="#packages" className="block text-xl font-bold text-black">
+          <Link
+            to="/"
+            className="block text-xl font-bold text-black"
+            onClick={toggleMenu}
+          >
+            Home
+          </Link>
+          <Link
+            to="ackages"
+            className="block text-xl font-bold text-black"
+            onClick={toggleMenu}
+          >
             Packages
-          </a>
-          <a href="#process" className="block text-xl font-bold text-black">
+          </Link>
+          <Link
+            to="process"
+            className="block text-xl font-bold text-black"
+            onClick={toggleMenu}
+          >
             Process
-          </a>
-          <a href="#work" className="block text-xl font-bold text-black">
+          </Link>
+          <Link
+            to="work"
+            className="block text-xl font-bold text-black"
+            onClick={toggleMenu}
+          >
             Our Work
-          </a>
-          <a href="#about" className="block text-xl font-bold text-black">
+          </Link>
+          <Link
+            to="about"
+            className="block text-xl font-bold text-black"
+            onClick={toggleMenu}
+          >
             About
-          </a>
-          <a href="#contact" className="block text-xl font-bold text-black">
+          </Link>
+          <Link
+            to="contact"
+            className="block text-xl font-bold text-black"
+            onClick={toggleMenu}
+          >
             Contact
-          </a>
-          <a href="#terms" className="block text-xl font-bold text-black">
+          </Link>
+          <Link
+            to="terms"
+            className="block text-xl font-bold text-black"
+            onClick={toggleMenu}
+          >
             Terms and Conditions
-          </a>
+          </Link>
         </nav>
       </div>
     </div>
