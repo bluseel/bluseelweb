@@ -13,13 +13,13 @@ const Hero = () => {
           </h1>
         </div>
 
-        <div className="font-lucida flex w-fit flex-col items-center justify-between gap-2 text-xl font-thin sm:flex-row">
-          <div className="w-[280px] rounded-lg bg-primary py-4 text-white transition-all hover:cursor-pointer hover:bg-primary/80">
+        <div className="flex w-fit flex-col items-center justify-between gap-2 font-lucida text-xl font-thin sm:flex-row">
+          <button className="w-[280px] rounded-lg bg-primary py-4 text-white transition-all hover:cursor-pointer hover:bg-primary/80">
             Schedule a Free Call
-          </div>
-          <div className="h-full w-[280px] rounded-lg border-[1px] border-primary py-4 text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white">
+          </button>
+          <button className="h-full w-[280px] rounded-lg border-[1px] border-primary py-4 text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white">
             See Our Work
-          </div>
+          </button>
         </div>
       </section>
     </div>
