@@ -1,22 +1,36 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '../../components/ui/dialog';
+import PlanSelectForm from '../Home Components/PlanSelectForm';
 
 const Packages = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [planeSelected, setPlaneSelected] = useState('');
+
+  const handleSelectPlanClick = (plan) => {
+    setPlaneSelected(plan);
+    setIsDialogOpen(true);
+  };
+
   return (
     <div className="relative flex flex-col items-center pt-[10svh] md:h-[100svh]">
       <header className="max-w-[500px] px-3 py-5 text-center text-2xl sm:px-2 sm:text-3xl">
         <span className="font-anton">Low Cost</span> Packages tailored just for
         your needs
       </header>
-      <Link
-        to="packages"
+      <a
+        href="/packages"
         className="absolute right-[40px] top-[120px] rounded-xl bg-primary px-4 py-2 text-white hover:bg-primary/80"
       >
         Compare All Packages
-      </Link>
+      </a>
 
       <article className="grid w-full gap-10 px-10 pb-10 md:grid-flow-col">
-        {/* Influencer */}
         <div className="border-secodary flex h-full w-full min-w-[230px] flex-col gap-2 border-2 px-3 py-2">
           <div className="font-anton text-xl tracking-widest sm:text-2xl">
             INFLUENCER
@@ -28,7 +42,10 @@ const Packages = () => {
           <div className="flex font-anton text-xl tracking-widest sm:text-2xl">
             <div className="text-md sm:text-lg">$</div> <div>400</div>
           </div>
-          <button className="sm:text-md w-full rounded-lg border-[1px] border-primary px-4 py-2 text-center text-sm text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white">
+          <button
+            className="sm:text-md w-full rounded-lg border-[1px] border-primary px-4 py-2 text-center text-sm text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white"
+            onClick={() => handleSelectPlanClick('influencer')}
+          >
             Select Plan
           </button>
 
@@ -57,7 +74,10 @@ const Packages = () => {
           <div className="flex font-anton text-2xl tracking-widest">
             <div className="text-md sm:text-lg">$</div> <div>900</div>
           </div>
-          <button className="sm:text-md w-full rounded-lg border-[1px] border-none bg-primary px-4 py-2 text-center text-sm text-white transition-all hover:cursor-pointer hover:bg-primary/80 hover:text-white">
+          <button
+            className="sm:text-md w-full rounded-lg border-[1px] border-none bg-primary px-4 py-2 text-center text-sm text-white transition-all hover:cursor-pointer hover:bg-primary/80 hover:text-white"
+            onClick={() => handleSelectPlanClick('startup')}
+          >
             Select Plan
           </button>
 
@@ -86,7 +106,10 @@ const Packages = () => {
           <div className="flex font-anton text-2xl tracking-widest">
             <div className="text-md sm:text-lg">$</div> <div>1200</div>
           </div>
-          <button className="sm:text-md w-full rounded-lg border-[1px] border-primary px-4 py-2 text-center text-sm text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white">
+          <button
+            className="sm:text-md w-full rounded-lg border-[1px] border-primary px-4 py-2 text-center text-sm text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white"
+            onClick={() => handleSelectPlanClick('business')}
+          >
             Select Plan
           </button>
 
@@ -106,6 +129,15 @@ const Packages = () => {
             </ul>
           </div>
         </div>
+        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <DialogTrigger asChild></DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>Select Your Plan</DialogTitle>
+            </DialogHeader>
+            <PlanSelectForm selectedPackage={planeSelected} />
+          </DialogContent>
+        </Dialog>
       </article>
     </div>
   );

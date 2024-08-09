@@ -5,9 +5,9 @@ import Navmenu from './pages/nav/Navmenu';
 
 const App = () => {
   return (
-    <div>
+    <div className="">
       <Navbar />
-      <Outlet />
+      <Outlet className="dark:text-textColor" />
     </div>
   );
 };

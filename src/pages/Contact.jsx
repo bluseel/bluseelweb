@@ -10,9 +10,14 @@ const Contact = () => {
   const errorStyling = 'text-red-500 text-sm';
   const labelStyling = 'text-xl ';
 
+  const [isWhatsappChecked, setIsWhatsappChecked] = useState(true);
+  const [isTelegramChecked, setIsTelegramChecked] = useState(false);
+  const [isLineChecked, setIsLineChecked] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
+    social: '',
     email: '',
     message: '',
   });
@@ -20,11 +25,14 @@ const Contact = () => {
   const [errors, setErrors] = useState({
     name: '',
     phone: '',
+    social: '',
     email: '',
     message: '',
   });
 
-  const [submitMessage, setSubmitMessage] = useState('');
+  const [submitMessage, setSubmitMessage] = useState(
+    'Confirm FORMSUBMIT reCAPTCHA after pressing submit'
+  );
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -49,9 +57,14 @@ const Contact = () => {
     const newErrors = {
       name: '',
       phone: '',
+      social: '',
       email: '',
       message: '',
     };
+
+    if (!(isWhatsappChecked || isTelegramChecked || isLineChecked)) {
+      newErrors.phone = 'Please atleast one social media';
+    }
 
     if (!formData.name) {
       newErrors.name = 'Name is required';
@@ -95,14 +108,19 @@ const Contact = () => {
         <h1 className="mb-6 font-anton text-3xl">CONTACT US</h1>
       </div>
       <div className="flex h-[68svh] w-[100svw] flex-col px-8 sm:flex-row">
-        <div className="flex flex-[2] place-content-center sm:place-content-start">
+        <div className="flex flex-[2] flex-col place-content-center sm:place-content-start">
           <form
             id="contactForm"
             className="flex w-full min-w-[400px] flex-col gap-2 px-4"
-            action="https://formsubmit.co/b8751cb9eddb5801f13b5a4f026969fc"
+            action="https://api.web3forms.com/submit"
             method="POST"
             onSubmit={handleSubmit}
           >
+            <input
+              type="hidden"
+              name="access_key"
+              value="37fcb63c-17a3-4af2-abaa-3a1ec7f08421"
+            />
             <div className="text-2xl">
               <div className={labelStyling}>Name</div>
               <input
@@ -141,8 +159,13 @@ const Contact = () => {
                       <input
                         type="checkbox"
                         id="whatsapp"
+                        name="social"
+                        value={`Whatsapp`}
                         className="accent-primary"
-                        defaultChecked
+                        checked={isWhatsappChecked}
+                        onChange={() =>
+                          setIsWhatsappChecked(!isWhatsappChecked)
+                        }
                       />
                       <div>WhatsApp</div>
                     </label>
@@ -153,6 +176,12 @@ const Contact = () => {
                       <input
                         type="checkbox"
                         id="telegram"
+                        name="social"
+                        value={`Telegram`}
+                        checked={isTelegramChecked}
+                        onChange={() =>
+                          setIsTelegramChecked(!isTelegramChecked)
+                        }
                         className="accent-primary"
                       />
                       <div>Telegram</div>
@@ -161,6 +190,10 @@ const Contact = () => {
                       <input
                         type="checkbox"
                         id="line"
+                        name="social"
+                        value={`Line`}
+                        checked={isLineChecked}
+                        onChange={() => setIsLineChecked(!isLineChecked)}
                         className="accent-primary"
                       />
                       <div>Line</div>
@@ -197,9 +230,9 @@ const Contact = () => {
               Submit
             </button>
           </form>
-          {submitMessage && <p className="">{submitMessage}</p>}
+          {/* {<p className="flex place-content-center">{submitMessage}</p>} */}
         </div>
-        <div className="flex flex-[1] place-content-center">
+        <div className="flex flex-[1] place-content-center text-center">
           <img src={contactLogo} className="w-fit" />
         </div>
       </div>

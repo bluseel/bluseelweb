@@ -6,7 +6,7 @@ import Work from './Work';
 
 const Home = () => {
   return (
-    <div className="h-screen snap-y snap-mandatory overflow-y-scroll">
+    <div className="dark:text--[#DCDCDC] h-screen snap-y snap-mandatory overflow-y-scroll dark:bg-[#292929]">
       <div className="snap-start snap-always">
         <Hero />
       </div>

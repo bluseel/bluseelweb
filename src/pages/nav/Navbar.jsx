@@ -23,8 +23,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky left-0 top-0 z-[100] w-full">
-      <div className="absolute left-0 top-0 flex h-[12svh] w-[100svw] items-center p-4 sm:px-8 lg:w-[98.8svw]">
+    <div className="sticky left-0 top-0 z-[50] w-full">
+      <div className="absolute left-0 top-0 flex h-[12svh] w-[100svw] items-center bg-white p-4 sm:px-8 lg:w-[98.8svw]">
         {menuOpen && (
           <div className="absolute inset-0 h-[100vh] w-full bg-gray-800 bg-opacity-90"></div>
         )}
@@ -42,12 +42,15 @@ const Navbar = () => {
           {/* right side */}
           <div className="flex items-center">
             <div className="flex h-[35px] items-center gap-2 font-lucida text-[0.8rem]">
-              <button className="flex h-full w-[130px] items-center rounded-lg bg-primary px-4 text-center text-white transition-all hover:cursor-pointer hover:bg-primary/80">
-                Schedule a Call
-              </button>
               <Link
                 to="contact"
-                className="hidden w-[130px] rounded-lg border-[1px] border-primary px-4 py-2 text-center text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white sm:block"
+                className="flex h-full w-[130px] items-center rounded-lg bg-primary px-4 text-center text-white transition-all hover:cursor-pointer hover:bg-primary/80"
+              >
+                Schedule a Call
+              </Link>
+              <Link
+                to="contact"
+                className="hidden w-[130px] rounded-lg border-[1px] border-primary px-4 py-2 text-center text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white"
               >
                 Contact
               </Link>
