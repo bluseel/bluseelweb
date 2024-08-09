@@ -49,36 +49,37 @@ const PackagesPage = () => {
   return (
     <div className="px-8 pt-[12svh] sm:min-h-[88svh]">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="mb-6 font-anton text-3xl">CONTACT US</h1>
+        <h1 className="mb-6 font-anton text-3xl">AFFORDABLE PACKAGES</h1>
       </div>
 
+      {/* header */}
       <div className="sticky top-[12svh] z-10">
         <div className="grid grid-cols-4">
           <div className="bg-white p-4 text-center text-white">
             {/* Empty header */}
           </div>
           <div className="flex flex-col items-center rounded-tl-2xl border-r-[1px] bg-primary p-4 text-center text-white">
-            <span className="text-xl"> Influencer</span>
+            <span className="text-sm sm:text-xl"> Influencer</span>
             <button
-              className="w-fit rounded-sm border-2 border-secondary px-2 py-1 text-[0.7rem] text-secondary transition-all hover:bg-secondary hover:text-black"
+              className="w-fit rounded-sm border-2 border-secondary px-2 py-1 text-[0.7rem] leading-3 text-secondary transition-all hover:bg-secondary hover:text-black sm:leading-none"
               onClick={() => handleSelectPlanClick('influencer')}
             >
               Select Plan
             </button>
           </div>
           <div className="flex flex-col items-center border-r-[1px] bg-primary p-4 text-center text-white">
-            <span className="text-xl"> Startup</span>
+            <span className="text-sm sm:text-xl"> Startup</span>
             <button
-              className="w-fit rounded-sm border-2 border-secondary px-2 py-1 text-[0.7rem] text-secondary transition-all hover:bg-secondary hover:text-black"
+              className="w-fit rounded-sm border-2 border-secondary px-2 py-1 text-[0.7rem] leading-3 text-secondary transition-all hover:bg-secondary hover:text-black sm:leading-none"
               onClick={() => handleSelectPlanClick('startup')}
             >
               Select Plan
             </button>
           </div>
           <div className="flex flex-col items-center rounded-tr-2xl bg-primary p-4 text-center text-white">
-            <span className="text-xl"> Business</span>
+            <span className="text-sm sm:text-xl"> Business</span>
             <button
-              className="w-fit rounded-sm border-2 border-secondary px-2 py-1 text-[0.7rem] text-secondary transition-all hover:bg-secondary hover:text-black"
+              className="w-fit rounded-sm border-2 border-secondary px-2 py-1 text-[0.7rem] leading-3 text-secondary transition-all hover:bg-secondary hover:text-black sm:leading-none"
               onClick={() => handleSelectPlanClick('business')}
             >
               Select Plan
@@ -87,11 +88,12 @@ const PackagesPage = () => {
         </div>
       </div>
 
-      <div className="relative mb-4 grid grid-cols-4">
+      {/* features */}
+      <div className="relative mb-4 grid grid-cols-4 text-[0.7rem] sm:text-sm">
         {allFeatures.map((feature, index) => (
           <React.Fragment key={index}>
             <div
-              className={`flex items-center border-b-[1px] bg-primary p-4 font-bold text-white ${
+              className={`flex items-center break-all border-b-[1px] bg-primary p-4 font-bold text-white ${
                 index === 0
                   ? 'rounded-tl-xl'
                   : index === allFeatures.length - 1

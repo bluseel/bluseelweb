@@ -28,7 +28,7 @@ const Navbar = () => {
         {menuOpen && (
           <div className="absolute inset-0 h-[100vh] w-full bg-gray-800 bg-opacity-90"></div>
         )}
-        <div className="flex h-full w-full justify-between">
+        <div className="flex h-full w-full items-center justify-between">
           {/* left side */}
           <Link to="/" className="block text-xl font-bold text-black">
             <div className="flex items-center gap-2">

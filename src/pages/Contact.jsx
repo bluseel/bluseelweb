@@ -104,14 +104,14 @@ const Contact = () => {
 
   return (
     <div className="pt-[12svh] sm:min-h-[88svh]">
-      <div className="flex flex-col items-center justify-center">
+      <div className="sm:items flex flex-col items-center justify-center">
         <h1 className="mb-6 font-anton text-3xl">CONTACT US</h1>
       </div>
-      <div className="flex h-[68svh] w-[100svw] flex-col px-8 sm:flex-row">
+      <div className="flex h-[68svh] w-[100svw] flex-col space-y-5 px-8 sm:flex-row">
         <div className="flex flex-[2] flex-col place-content-center sm:place-content-start">
           <form
             id="contactForm"
-            className="flex w-full min-w-[400px] flex-col gap-2 px-4"
+            className="flex w-full min-w-fit flex-col gap-2 px-4 sm:min-w-[400px]"
             action="https://api.web3forms.com/submit"
             method="POST"
             onSubmit={handleSubmit}
@@ -232,7 +232,7 @@ const Contact = () => {
           </form>
           {/* {<p className="flex place-content-center">{submitMessage}</p>} */}
         </div>
-        <div className="flex flex-[1] place-content-center text-center">
+        <div className="sm: flex flex-[1] place-content-center text-center">
           <img src={contactLogo} className="w-fit" />
         </div>
       </div>
