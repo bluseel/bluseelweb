@@ -45,9 +45,12 @@ const Navbar = () => {
               <button className="flex h-full w-[130px] items-center rounded-lg bg-primary px-4 text-center text-white transition-all hover:cursor-pointer hover:bg-primary/80">
                 Schedule a Call
               </button>
-              <button className="hidden w-[130px] rounded-lg border-[1px] border-primary px-4 py-2 text-center text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white sm:block">
+              <Link
+                to="contact"
+                className="hidden w-[130px] rounded-lg border-[1px] border-primary px-4 py-2 text-center text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white sm:block"
+              >
                 Contact
-              </button>
+              </Link>
               <button
                 className="z-10 h-full rounded-lg bg-primary p-2 text-white transition-all hover:cursor-pointer hover:bg-primary/80"
                 onClick={toggleMenu}

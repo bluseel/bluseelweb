@@ -4,23 +4,31 @@ const PackagesPage = () => {
   // Define the data for all features
   const allFeatures = [
     { name: 'Onetime Price', values: ['$400', '$900', '$1200'] },
-    { name: 'Number of pages', values: ['2', '5', '10'] },
+    {
+      name: 'Number of pages',
+      values: [
+        '2 (Main, About)',
+        '5 (Main, Contact, About, Service, Privacy Policy)',
+        '10 (Main, Contact, About, Service x5, Privacy Policy)',
+      ],
+    },
     {
       name: 'Custom Domain Name (yearly charged, first year free)',
       values: ['✔', '✔', '✔'],
     },
     { name: 'Blazingly Fast', values: ['✔', '✔', '✔'] },
     { name: 'Free Web Hosting', values: ['✔', '✔', '✔'] },
+    { name: 'Accessibility ensured', values: ['✔', '✔', '✔'] },
     { name: 'Mobile friendly design', values: ['✔', '✔', '✔'] },
     { name: 'All device responsive', values: ['❌', '✔', '✔'] },
-    { name: 'Accessibility ensured', values: ['❌', '✔', '✔'] },
     { name: 'Website design & build amendments', values: ['❌', '2', '5'] },
     { name: 'Unique and Creative UI/UX', values: ['❌', '✔', '✔'] },
     {
       name: 'Business email (yearly charged, first year free)',
-      values: ['❌', '✔', '✔'],
+      values: ['❌', '❌', '✔'],
     },
     { name: 'Content Management System', values: ['❌', '❌', '✔'] },
+    { name: '6 months free 24/7 support', values: ['❌', '❌', '✔'] },
   ];
 
   return (
@@ -36,10 +44,10 @@ const PackagesPage = () => {
             {/* Empty header */}
           </div>
           <div className="rounded-tl-2xl border-r-[1px] bg-primary p-4 text-center text-white">
-            Starter
+            Influencer
           </div>
           <div className="border-r-[1px] bg-primary p-4 text-center text-white">
-            Growth
+            Startup
           </div>
           <div className="rounded-tr-2xl bg-primary p-4 text-center text-white">
             Business
@@ -52,7 +60,7 @@ const PackagesPage = () => {
         {allFeatures.map((feature, index) => (
           <React.Fragment key={index}>
             <div
-              className={`border-b-[1px] bg-primary p-4 font-bold text-white ${
+              className={`flex items-center border-b-[1px] bg-primary p-4 font-bold text-white ${
                 index === 0
                   ? 'rounded-tl-xl'
                   : index === allFeatures.length - 1

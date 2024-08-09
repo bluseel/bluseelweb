@@ -1,12 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Packages = () => {
   return (
-    <div className="flex flex-col items-center pt-[10svh] md:h-[100svh]">
+    <div className="relative flex flex-col items-center pt-[10svh] md:h-[100svh]">
       <header className="max-w-[500px] px-3 py-5 text-center text-2xl sm:px-2 sm:text-3xl">
         <span className="font-anton">Low Cost</span> Packages tailored just for
         your needs
       </header>
+      <Link
+        to="packages"
+        className="absolute right-[40px] top-[120px] rounded-xl bg-primary px-4 py-2 text-white hover:bg-primary/80"
+      >
+        Compare All Packages
+      </Link>
 
       <article className="grid w-full gap-10 px-10 pb-10 md:grid-flow-col">
         {/* Influencer */}
@@ -25,7 +32,7 @@ const Packages = () => {
             Select Plan
           </button>
 
-          <div className="sm:text-md text-sm">
+          <div className="text-[0.8rem]">
             <ul className="">
               <li>2 Page website</li>
               <li>Website Development</li>
@@ -55,21 +62,20 @@ const Packages = () => {
           </button>
 
           <div>
-            <ul className="sm:text-md text-sm">
+            <ul className="text-[0.8rem]">
               <li>5 Page website</li>
               <li>Website Development</li>
               <li>Accessibility ensured</li>
               <li>All devices responsive</li>
-              <li>5 Ammendments</li>
+              <li>2 Ammendments</li>
               <li>Custom domain name</li>
               <li>Website Hosting</li>
               <li>Unique & Creative UI</li>
-              <li>Business email address</li>
             </ul>
           </div>
         </div>
         {/* buisninss */}
-        <div className="border-secodary flex h-full w-full min-w-[230px] flex-col gap-2 border-2 px-3 py-2">
+        <div className="border-secodary flex h-full w-full min-w-[230px] flex-col gap-[6px] border-2 px-3 py-2">
           <div className="font-anton text-xl tracking-widest sm:text-2xl">
             BUISNESS
           </div>
@@ -85,13 +91,13 @@ const Packages = () => {
           </button>
 
           <div>
-            <ul className="sm:text-md text-sm">
+            <ul className="text-[0.8rem]">
               <li>10 Page website</li>
               <li>Website Development</li>
               <li>Website Design</li>
               <li>Accessibility ensured</li>
               <li>All devices responsive</li>
-              <li>15 Ammendments</li>
+              <li>5 Ammendments</li>
               <li>Custom domain name</li>
               <li>Website Hosting</li>
               <li>Unique & Creative UI</li>
