@@ -7,13 +7,13 @@ import Work from './Work';
 const Home = () => {
   return (
     <div className="h-screen snap-y snap-mandatory overflow-y-scroll">
-      <div className="snap-start">
+      <div className="snap-start snap-always">
         <Hero />
       </div>
-      <div className="snap-start">
+      <div className="snap-start snap-always">
         <Packages />
       </div>
-      <div className="snap-start">
+      <div className="snap-start snap-always">
         <Work />
       </div>
       <div className="snap-start pb-[10svh]">

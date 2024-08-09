@@ -30,12 +30,14 @@ const Navbar = () => {
         )}
         <div className="flex h-full w-full justify-between">
           {/* left side */}
-          <div className="flex items-center gap-2">
-            <div className="h-8">
-              <img src={logo} alt="Logo" className="h-full w-full" />
+          <Link to="/" className="block text-xl font-bold text-black">
+            <div className="flex items-center gap-2">
+              <div className="h-8">
+                <img src={logo} alt="Logo" className="h-full w-full" />
+              </div>
+              <div className="font-anton text-3xl">bluseel</div>
             </div>
-            <div className="font-anton text-3xl">bluseel</div>
-          </div>
+          </Link>
 
           {/* right side */}
           <div className="flex items-center">
@@ -87,7 +89,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="ackages"
+            to="packages"
             className="block text-xl font-bold text-black"
             onClick={toggleMenu}
           >
@@ -99,13 +101,6 @@ const Navbar = () => {
             onClick={toggleMenu}
           >
             Process
-          </Link>
-          <Link
-            to="work"
-            className="block text-xl font-bold text-black"
-            onClick={toggleMenu}
-          >
-            Our Work
           </Link>
           <Link
             to="about"

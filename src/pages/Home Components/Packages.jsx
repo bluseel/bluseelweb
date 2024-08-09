@@ -29,7 +29,6 @@ const Packages = () => {
             <ul className="">
               <li>2 Page website</li>
               <li>Website Development</li>
-              <li>Website Design</li>
               <li>Mobile responsive</li>
               <li>Custom domain name</li>
               <li>Website Hosting</li>
@@ -59,7 +58,6 @@ const Packages = () => {
             <ul className="sm:text-md text-sm">
               <li>5 Page website</li>
               <li>Website Development</li>
-              <li>Website Design</li>
               <li>Accessibility ensured</li>
               <li>All devices responsive</li>
               <li>5 Ammendments</li>
@@ -98,6 +96,7 @@ const Packages = () => {
               <li>Website Hosting</li>
               <li>Unique & Creative UI</li>
               <li>Business email address</li>
+              <li>Content Management System</li>
             </ul>
           </div>
         </div>
