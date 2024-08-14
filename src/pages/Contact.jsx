@@ -232,8 +232,15 @@ const Contact = () => {
           </form>
           {/* {<p className="flex place-content-center">{submitMessage}</p>} */}
         </div>
-        <div className="sm: flex flex-[1] place-content-center text-center">
+        <div className="sm: relative flex flex-[1] place-content-center text-center">
           <img src={contactLogo} className="w-fit" />
+          <div className="absolute bottom-0 right-[23%]">
+            <div className="flex h-16 space-x-2">
+              <img src="/contact/phone.svg" className="w-full" alt="" />
+              <img src="/contact/whatsapp.svg" className="w-full" alt="" />
+              <img src="/contact/mail.svg" className="w-full" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
 import Work from './pages/Work';
 import PackagesPage from './pages/PackagesPage';
+import Terms from './pages/Terms';
 // import Process from './pages/Process';
 import Process from './pages/Process updated';
 import './index.css';
@@ -23,6 +24,7 @@ ReactDOM.render(
           <Route path="contact" element={<Contact />} />
           <Route path="work" element={<Work />} />
           <Route path="packages" element={<PackagesPage />} />
+          <Route path="terms" element={<Terms />} />
           {/* Add the NotFound route as the last route */}
           <Route path="*" element={<NotFound />} />
         </Route>
