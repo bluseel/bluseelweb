@@ -8,18 +8,25 @@ import {
 } from '../components/ui/carousel';
 
 const Work = () => {
+  const handleClick = (src) => {
+    window.open(src, '_blank');
+  };
+
   const projects = [
-    {
-      name: 'Skyline School',
-      imgURL: '/work/skyline.jpg',
-    },
     {
       name: 'Designer Portfolio',
       imgURL: '/work/portfolio.jpg',
+      site: 'https://attiquesa.netlify.app/',
     },
     {
       name: 'Task Tracker',
       imgURL: '/work/task_tracker.jpg',
+      site: 'https://tasktracker0.netlify.app/',
+    },
+    {
+      name: 'Skyline School',
+      imgURL: '/work/skyline.jpg',
+      site: 'https://bluseel.github.io/skyline-website/',
     },
   ];
 
@@ -39,7 +46,17 @@ const Work = () => {
           >
             <CarouselContent className="flex w-full sm:min-w-[900px]">
               {projects.map((project, index) => (
-                <CarouselItem key={index} className="sm:basis-1/3">
+                <CarouselItem key={index} className="relative sm:basis-1/3">
+                  <button
+                    onClick={() => handleClick(project.site)}
+                    className="absolute right-0 top-0 mr-1 mt-1 w-10 rounded-lg bg-white/80 p-2"
+                  >
+                    <img
+                      src="/work/external.svg"
+                      alt=""
+                      className="h-full w-full"
+                    />
+                  </button>
                   <div className="h-[76svh]">
                     <img
                       src={project.imgURL}

@@ -6,7 +6,7 @@ import Tooltip from '../components/ui/CustomTooltip';
 const contactLogo = '/contactLogo.svg';
 
 const Contact = () => {
-  const inputStyling = `font-sans border-2 border-primary px-2 text-sm py-2 w-full
+  const inputStyling = `font-sansb border-2 border-primary px-2 text-sm py-2 w-full
     rounded-lg `;
   const errorStyling = 'text-red-500 text-sm';
   const labelStyling = 'text-xl ';

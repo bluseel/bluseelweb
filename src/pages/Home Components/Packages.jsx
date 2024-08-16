@@ -31,7 +31,9 @@ const Packages = () => {
         Compare All Packages
       </Link>
 
-      <article className="grid w-full gap-10 px-10 pb-10 md:grid-flow-col">
+      <article className="relative grid w-full gap-10 px-10 pb-10 md:grid-flow-col">
+        <p className="absolute -top-5 left-10 font-bold">Currency: USD</p>
+
         <div className="border-secodary flex h-full w-full min-w-[230px] flex-col gap-2 border-2 px-3 py-2">
           <div className="font-anton text-xl tracking-widest sm:text-2xl">
             PRESENCE
@@ -62,7 +64,7 @@ const Packages = () => {
           </div>
         </div>
         {/* startup */}
-        <div className="relative flex h-full w-full min-w-[230px] flex-col gap-2 border-2 border-primary px-3 py-2 shadow-md shadow-current">
+        <div className="relative flex h-full w-full min-w-[230px] flex-col gap-2 border-2 border-primary px-3 py-2 shadow-xl shadow-current">
           <div className="absolute -top-3 right-10 rounded-md border-2 border-primary bg-white px-2 shadow-sm shadow-current">
             POPULAR
           </div>
@@ -98,7 +100,7 @@ const Packages = () => {
           </div>
         </div>
         {/* buisninss */}
-        <div className="relative flex h-full w-full min-w-[230px] flex-col gap-2 border-2 border-primary px-3 py-2 shadow-md shadow-current">
+        <div className="border-secodary flex h-full w-full min-w-[230px] flex-col gap-2 border-2 px-3 py-2">
           <div className="font-anton text-xl tracking-widest sm:text-2xl">
             BUISNESS
           </div>

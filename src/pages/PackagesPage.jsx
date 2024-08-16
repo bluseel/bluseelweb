@@ -55,8 +55,10 @@ const PackagesPage = () => {
       {/* header */}
       <div className="sticky top-[12svh] z-10">
         <div className="grid grid-cols-4">
-          <div className="bg-white p-4 text-center text-white">
-            {/* Empty header */}
+          <div className="relative bg-white p-4 text-center text-white">
+            <p className="absolute bottom-0 left-0 font-bold text-black">
+              Currency: USD
+            </p>
           </div>
           <div className="flex flex-col items-center rounded-tl-2xl border-r-[1px] bg-primary p-4 text-center text-white">
             <span className="text-sm sm:text-xl"> Presence</span>
@@ -93,7 +95,7 @@ const PackagesPage = () => {
         {allFeatures.map((feature, index) => (
           <React.Fragment key={index}>
             <div
-              className={`flex items-center break-all border-b-[1px] bg-primary p-4 font-bold text-white ${
+              className={`flex items-center border-b-[1px] bg-primary p-4 font-bold text-white ${
                 index === 0
                   ? 'rounded-tl-xl'
                   : index === allFeatures.length - 1
