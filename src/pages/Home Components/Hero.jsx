@@ -17,9 +17,9 @@ const Hero = () => {
         <div className="flex w-fit flex-col items-center justify-between gap-2 font-lucida text-xl font-thin sm:flex-row">
           <Link
             to="contact"
-            className="w-[280px] rounded-lg bg-primary py-4 text-white transition-all hover:cursor-pointer hover:bg-primary/80"
+            className="w-[310px] rounded-lg bg-primary py-4 text-white transition-all hover:cursor-pointer hover:bg-primary/80"
           >
-            Schedule a Free Call
+            Schedule a Free Consultation
           </Link>
           {/* <button className="h-full w-[280px] rounded-lg border-[1px] border-primary py-4 text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white">
             See Our Work

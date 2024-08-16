@@ -234,8 +234,8 @@ const Contact = () => {
           {/* {<p className="flex place-content-center">{submitMessage}</p>} */}
         </div>
         <div className="sm: relative flex flex-[1] place-content-center text-center">
-          <img src={contactLogo} className="w-fit" />
-          <div className="absolute bottom-0 right-[23%]">
+          <img src={contactLogo} className="w-fit pt-16 sm:pt-0" />
+          <div className="absolute right-[23%] top-0 sm:bottom-0 sm:top-auto">
             <div className="flex h-16 space-x-2">
               <Tooltip content="+92 308 3872646">
                 <button className="h-full w-full">

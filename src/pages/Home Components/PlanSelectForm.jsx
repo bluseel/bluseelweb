@@ -221,7 +221,7 @@ const PlanSelectForm = ({ selectedPackage }) => {
           <option value="" disabled>
             Select a plan
           </option>
-          <option value="influencer">Influencer</option>
+          <option value="presence">Presence</option>
           <option value="startup">Startup</option>
           <option value="business">Business</option>
         </select>

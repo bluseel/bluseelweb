@@ -34,18 +34,19 @@ const Packages = () => {
       <article className="grid w-full gap-10 px-10 pb-10 md:grid-flow-col">
         <div className="border-secodary flex h-full w-full min-w-[230px] flex-col gap-2 border-2 px-3 py-2">
           <div className="font-anton text-xl tracking-widest sm:text-2xl">
-            INFLUENCER
+            PRESENCE
           </div>
           <div className="text-[0.7rem] leading-none sm:text-[0.8rem]">
-            Highly customizable linkr with an extra page for contact, about or
-            services
+            Kickstart your online presence with a sleek, 2-page website. Perfect
+            for showcasing your essentials with full mobile responsiveness and a
+            custom domain
           </div>
           <div className="flex font-anton text-xl tracking-widest sm:text-2xl">
             <div className="text-md sm:text-lg">$</div> <div>400</div>
           </div>
           <button
             className="sm:text-md w-full rounded-lg border-[1px] border-primary px-4 py-2 text-center text-sm text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white"
-            onClick={() => handleSelectPlanClick('influencer')}
+            onClick={() => handleSelectPlanClick('presence')}
           >
             Select Plan
           </button>
@@ -69,8 +70,9 @@ const Packages = () => {
             STARTUP
           </div>
           <div className="text-[0.7rem] leading-none sm:text-[0.8rem]">
-            Highly customizable linkr with an extra page for contact, about or
-            services
+            Elevate your brand with a 5-page website designed for growth.
+            Includes unique design elements, all device responsive and
+            accessibility features
           </div>
           <div className="flex font-anton text-2xl tracking-widest">
             <div className="text-md sm:text-lg">$</div> <div>900</div>
@@ -96,13 +98,14 @@ const Packages = () => {
           </div>
         </div>
         {/* buisninss */}
-        <div className="border-secodary flex h-full w-full min-w-[230px] flex-col gap-[6px] border-2 px-3 py-2">
+        <div className="relative flex h-full w-full min-w-[230px] flex-col gap-2 border-2 border-primary px-3 py-2 shadow-md shadow-current">
           <div className="font-anton text-xl tracking-widest sm:text-2xl">
             BUISNESS
           </div>
           <div className="text-[0.7rem] leading-none sm:text-[0.8rem]">
-            Highly customizable linkr with an extra page for contact, about or
-            services
+            Go big with a comprehensive 10-page website, creative design, CMS,
+            and business email. Ideal for established brands needing robust
+            functionality and professional touch
           </div>
           <div className="flex font-anton text-2xl tracking-widest">
             <div className="text-md sm:text-lg">$</div> <div>1200</div>
@@ -115,7 +118,7 @@ const Packages = () => {
           </button>
 
           <div>
-            <ul className="text-[0.8rem]">
+            <ul className="text-[0.8rem] leading-tight">
               <li>10 Page website</li>
               <li>Website Development</li>
               <li>Website Design</li>

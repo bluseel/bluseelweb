@@ -59,10 +59,10 @@ const PackagesPage = () => {
             {/* Empty header */}
           </div>
           <div className="flex flex-col items-center rounded-tl-2xl border-r-[1px] bg-primary p-4 text-center text-white">
-            <span className="text-sm sm:text-xl"> Influencer</span>
+            <span className="text-sm sm:text-xl"> Presence</span>
             <button
               className="w-fit rounded-sm border-2 border-secondary px-2 py-1 text-[0.7rem] leading-3 text-secondary transition-all hover:bg-secondary hover:text-black sm:leading-none"
-              onClick={() => handleSelectPlanClick('influencer')}
+              onClick={() => handleSelectPlanClick('presence')}
             >
               Select Plan
             </button>
