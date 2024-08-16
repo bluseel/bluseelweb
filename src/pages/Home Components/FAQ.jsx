@@ -21,7 +21,7 @@ const FAQ = () => {
     {
       question: 'Which package is best for me?',
       answer:
-        'Choosing the right package depends on your business needs and goals. Our Basic Package is perfect for startups and small businesses looking for a simple yet effective online presence. Our Premium Package is ideal for businesses needing advanced features and a more customized approach. We also offer tailored solutions to meet specific requirements. Contact us for a consultation to determine the best fit for your business.',
+        'Choosing the right package depends on your business needs. Presence is great for a simple, professional online presence with essential features. Startup suits growing businesses needing more pages and unique design elements. Business is ideal for established brands requiring extensive functionality, including a content management system and business email. For personalized advice, contact us for a consultation to determine the best fit for your goals.',
     },
     {
       question: 'What if I cannot find a package for me?',

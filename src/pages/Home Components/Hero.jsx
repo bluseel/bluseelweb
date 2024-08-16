@@ -5,14 +5,14 @@ const Hero = () => {
   return (
     <div className="flex h-[100svh] items-center">
       <section className="flex w-full flex-col items-center gap-5 text-wrap text-center">
-        <div>
+        <header>
           <h1 className="px-8 text-4xl leading-snug md:text-5xl lg:text-7xl">
             Building website with
             <span className="font-anton"> Time </span>and
             <span className="font-anton"> Care, </span>just
             <span className="font-anton"> #ForYou </span>
           </h1>
-        </div>
+        </header>
 
         <div className="flex w-fit flex-col items-center justify-between gap-2 font-lucida text-xl font-thin sm:flex-row">
           <Link

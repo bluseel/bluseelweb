@@ -20,10 +20,10 @@ const Packages = () => {
 
   return (
     <div className="relative flex flex-col items-center pt-[10svh] md:h-[100svh]">
-      <header className="max-w-[500px] px-3 py-5 pb-[70px] text-center text-2xl sm:px-2 sm:pb-5 sm:text-3xl">
+      <div className="max-w-[500px] px-3 py-5 pb-[70px] text-center text-2xl sm:px-2 sm:pb-5 sm:text-3xl">
         <span className="font-anton">Low Cost</span> Packages tailored just for
         your needs
-      </header>
+      </div>
       <Link
         to="/packages"
         className="absolute right-[25%] top-[180px] rounded-xl bg-primary px-4 py-2 text-sm text-white hover:bg-primary/80 sm:right-[40px] sm:top-[120px]"
