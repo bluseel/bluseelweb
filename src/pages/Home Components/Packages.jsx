@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Dialog,
   DialogContent,
@@ -23,12 +24,12 @@ const Packages = () => {
         <span className="font-anton">Low Cost</span> Packages tailored just for
         your needs
       </header>
-      <a
-        href="/packages"
+      <Link
+        to="/packages"
         className="absolute right-[25%] top-[180px] rounded-xl bg-primary px-4 py-2 text-sm text-white hover:bg-primary/80 sm:right-[40px] sm:top-[120px]"
       >
         Compare All Packages
-      </a>
+      </Link>
 
       <article className="grid w-full gap-10 px-10 pb-10 md:grid-flow-col">
         <div className="border-secodary flex h-full w-full min-w-[230px] flex-col gap-2 border-2 px-3 py-2">

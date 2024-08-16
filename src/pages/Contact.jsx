@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Tooltip from '../components/ui/CustomTooltip';
 // Corrected the import paths to match standard conventions
 const contactLogo = '/contactLogo.svg';
 
@@ -236,9 +237,33 @@ const Contact = () => {
           <img src={contactLogo} className="w-fit" />
           <div className="absolute bottom-0 right-[23%]">
             <div className="flex h-16 space-x-2">
-              <img src="/contact/phone.svg" className="w-full" alt="" />
-              <img src="/contact/whatsapp.svg" className="w-full" alt="" />
-              <img src="/contact/mail.svg" className="w-full" alt="" />
+              <Tooltip content="+92 308 3872646">
+                <button className="h-full w-full">
+                  <img
+                    src="/contact/phone.svg"
+                    className="h-full w-full"
+                    alt=""
+                  />
+                </button>
+              </Tooltip>
+              <Tooltip content="+92 308 3872646">
+                <button className="h-full w-full">
+                  <img
+                    src="/contact/whatsapp.png"
+                    className="h-full w-full"
+                    alt=""
+                  />
+                </button>
+              </Tooltip>
+              <Tooltip content="support@bluseel.com">
+                <button className="h-full w-full">
+                  <img
+                    src="/contact/mail.svg"
+                    className="h-full w-full"
+                    alt=""
+                  />
+                </button>
+              </Tooltip>
             </div>
           </div>
         </div>

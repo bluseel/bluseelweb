@@ -61,7 +61,7 @@ const Terms = () => {
   return (
     <div className="pt-[12svh] font-sans sm:min-h-[88svh]">
       <div className="sm:items flex flex-col items-center justify-center">
-        <h1 className="mb-6 font-anton text-3xl">CONTACT US</h1>
+        <h1 className="mb-6 font-anton text-3xl">TERMS AND CONDITIONS</h1>
       </div>
       <div className="px-8">
         <div>
