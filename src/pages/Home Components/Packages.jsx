@@ -110,7 +110,7 @@ const Packages = () => {
             functionality and professional touch
           </div>
           <div className="flex font-anton text-2xl tracking-widest">
-            <div className="text-md sm:text-lg">$</div> <div>20000</div>
+            <div className="text-md sm:text-lg">$</div> <div>2000</div>
           </div>
           <button
             className="sm:text-md w-full rounded-lg border-[1px] border-primary px-4 py-2 text-center text-sm text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white"
