@@ -44,7 +44,7 @@ const Packages = () => {
             custom domain
           </div>
           <div className="flex font-anton text-xl tracking-widest sm:text-2xl">
-            <div className="text-md sm:text-lg">$</div> <div>400</div>
+            <div className="text-md sm:text-lg">$</div> <div>700</div>
           </div>
           <button
             className="sm:text-md w-full rounded-lg border-[1px] border-primary px-4 py-2 text-center text-sm text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white"
@@ -77,7 +77,7 @@ const Packages = () => {
             accessibility features
           </div>
           <div className="flex font-anton text-2xl tracking-widest">
-            <div className="text-md sm:text-lg">$</div> <div>900</div>
+            <div className="text-md sm:text-lg">$</div> <div>1400</div>
           </div>
           <button
             className="sm:text-md w-full rounded-lg border-[1px] border-none bg-primary px-4 py-2 text-center text-sm text-white transition-all hover:cursor-pointer hover:bg-primary/80 hover:text-white"
@@ -110,7 +110,7 @@ const Packages = () => {
             functionality and professional touch
           </div>
           <div className="flex font-anton text-2xl tracking-widest">
-            <div className="text-md sm:text-lg">$</div> <div>1200</div>
+            <div className="text-md sm:text-lg">$</div> <div>20000</div>
           </div>
           <button
             className="sm:text-md w-full rounded-lg border-[1px] border-primary px-4 py-2 text-center text-sm text-primary transition-all hover:cursor-pointer hover:bg-primary hover:text-white"
