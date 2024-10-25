@@ -7,6 +7,12 @@ function Drive() {
         <a href="https://drive.google.com/drive/folders/1QIRrhVU-xtp4LY6VaFrXuK0YFMCYtEVp?usp=sharing">
           ABOUT US
         </a>
+        <a href="https://drive.google.com/file/d/13_U6u6ConWU2Rlwb86OK-ZSI_xxMw3HW/view?usp=sharing">
+          ABOUT Small
+        </a>
+        <a href="https://drive.google.com/drive/folders/1-HrybhTPgMrchX6LgdhZrF87_Y_2b360?usp=sharing">
+          ABOUT Big
+        </a>
       </header>
     </div>
   );
