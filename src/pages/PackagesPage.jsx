@@ -18,7 +18,7 @@ const PackagesPage = () => {
   };
 
   const allFeatures = [
-    { name: 'Onetime Price', values: ['$400', '$900', '$1200'] },
+    { name: 'Onetime Price', values: ['$700', '$1400', '$2000'] },
     {
       name: 'Number of pages',
       values: [
