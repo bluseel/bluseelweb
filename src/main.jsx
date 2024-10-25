@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Work from './pages/Work';
 import PackagesPage from './pages/PackagesPage';
 import Terms from './pages/Terms';
+import Drive from './pages/Drive';
 // import Process from './pages/Process';
 import Process from './pages/Process updated';
 import './index.css';
@@ -20,6 +21,9 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+
+          <Route path="m" element={<Drive />} />
+
           <Route path="process" element={<Process />} />
           <Route path="contact" element={<Contact />} />
           <Route path="work" element={<Work />} />
