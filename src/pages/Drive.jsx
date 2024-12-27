@@ -12,7 +12,7 @@ function Drive() {
           ABOUT Small
         </a>
         <br />
-        <a href="https://drive.google.com/drive/folders/1-HrybhTPgMrchX6LgdhZrF87_Y_2b360?usp=sharing">
+        <a href="https://drive.google.com/drive/folders/1fWrNhAh5rZFaApNQMOpJuQ5ru8QxyWxh?usp=sharing">
           ABOUT Big
         </a>
       </header>
